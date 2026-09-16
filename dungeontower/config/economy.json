@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "boardWidth": 7,
+  "boardHeight": 9,
+  "storage": {
+    "startingCapacity": 5,
+    "slotsPerUpgrade": 5,
+    "upgradeCosts": [
+      400,
+      1100,
+      2600,
+      6000
+    ]
+  },
+  "coinShop": {
+    "campCost": 5000,
+    "energyRefillCost": 4000,
+    "supplyCrateCost": 450,
+    "generatorRefillCost": 700,
+    "dispatchRerollCost": 260,
+    "directUnitBaseCost": 60,
+    "directUnitTierMultiplier": 1.85
+  },
+  "energyMax": 100,
+  "energyRegenSeconds": 120,
+  "energyStart": 100,
+  "rewards": {
+    "coinBase": 4,
+    "coinTierExponent": 1.55,
+    "xpBase": 3,
+    "xpTierExponent": 1.5
+  },
+  "ads": {
+    "energyRewardAmount": 40,
+    "energyDailyCap": 15,
+    "freeChestCooldownSeconds": 900,
+    "freeChestDailyCap": 12,
+    "doubleRewardDailyCap": 25,
+    "rerollDailyCap": 10,
+    "generatorRefillDailyCap": 15,
+    "perSlotCooldownSeconds": 20,
+    "interstitial": {
+      "enabled": true,
+      "minFloorUnlocked": 10,
+      "minIntervalSeconds": 180,
+      "everyNFloorClears": 3,
+      "sessionGraceSeconds": 90,
+      "afterRewardedCooldownSeconds": 45,
+      "sessionCap": 4,
+      "dailyCap": 10
+    }
+  },
+  "floors": {
+    "totalFloors": 100,
+    "reqCountBase": 2,
+    "reqCountPerFloors": 6,
+    "reqCountMax": 5,
+    "tierBase": 2,
+    "tierPerFloors": 5,
+    "tierMax": 9,
+    "tierJitter": 1,
+    "unitsMin": 1,
+    "unitsMax": 2,
+    "unitsGrowthPerFloors": 10,
+    "unitsHardMax": 9,
+    "unitsSpread": 2,
+    "bossExtraReq": 1,
+    "bossExtraTier": 1,
+    "bossUnitsMax": 3,
+    "bossClearMultiplier": 2
+  },
+  "feel": {
+    "dragFollowSpeed": 26.0,
+    "settleSpeed": 20.0,
+    "pickupScale": 1.2,
+    "snapRadius": 0.5,
+    "snapStrength": 0.6,
+    "hoverPulse": 0.12,
+    "mergePopDuration": 0.28,
+    "mergeSquash": 0.28,
+    "mergeFlash": 0.75,
+    "shakeStrength": 0.035,
+    "shakeDuration": 0.14,
+    "sfxVolume": 0.7,
+    "sfxPitchPerTier": 0.09
+  },
+  "backdrop": {
+    "floorsPerBackdrop": 10,
+    "scrim": 0.45,
+    "boardScrim": 0.55,
+    "boardScrimMargin": 0.8,
+    "saturation": 0.85,
+    "flicker": 0.035,
+    "socketAlpha": 0.55,
+    "bands": [
+      {
+        "band": 1,
+        "scrim": 0.52,
+        "boardScrim": 0.58,
+        "saturation": 0.72
+      },
+      {
+        "band": 2,
+        "scrim": 0.32,
+        "boardScrim": 0.45,
+        "saturation": 0.9
+      },
+      {
+        "band": 3,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 4,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 5,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 6,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 7,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 8,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 9,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      },
+      {
+        "band": 10,
+        "scrim": 0.45,
+        "boardScrim": 0.55,
+        "saturation": 0.85
+      }
+    ]
+  }
+}
