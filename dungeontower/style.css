@@ -1,0 +1,50 @@
+/* slively-legal 의 기존 페이지와 같은 색·서체를 쓴다.
+   두 앱의 고지 페이지가 한 회사 것으로 보여야 한다.
+
+   외부 CSS·폰트를 받지 않는다 — CDN 요청 자체가 방문자 IP 를 제3자에게
+   넘기는 일이라, 그러면 이 문서가 스스로 적은 내용을 어긴다. */
+:root {
+  --bg: #fffffb;
+  --ink: #25201b;
+  --ink-dim: #5f564d;
+  --ink-faint: #8a7a68;
+  --line: #e8dfd3;
+  --accent: #7b5f2f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 32px 20px 64px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+               "Apple SD Gothic Neo", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 760px; margin: 0 auto; }
+a { color: var(--accent); }
+a.back {
+  display: inline-flex; margin-bottom: 24px;
+  color: var(--accent); font-weight: 800; text-decoration: none;
+}
+h1 { margin: 0 0 8px; font-size: 2rem; line-height: 1.25; }
+h2 { margin: 30px 0 10px; font-size: 1.1rem; }
+h3 { margin: 22px 0 6px; font-size: 1rem; }
+p, li { color: var(--ink-dim); line-height: 1.7; }
+li { margin: 6px 0; }
+.updated { color: var(--ink-faint); font-size: 0.92rem; }
+.lede {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 20px; margin: 24px 0;
+}
+.lede p { margin: 0; }
+table {
+  width: 100%; border-collapse: collapse; margin: 14px 0;
+  font-size: 0.95rem; display: block; overflow-x: auto;
+}
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink-faint); font-weight: 600; white-space: nowrap; }
+td { color: var(--ink-dim); }
+.en { margin-top: 56px; padding-top: 36px; border-top: 1px solid var(--line); }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+         color: var(--ink-faint); font-size: 0.9rem; }
